@@ -1,6 +1,7 @@
 package com.CRUD;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StudentRepo {
     private List<Student> students = new ArrayList<>();
@@ -15,7 +16,7 @@ public class StudentRepo {
 
     public Student getStudent(Integer id) {
         for (Student student : this.students) {
-            if (student.getId() == id) {
+            if (student.getID() == id) {
                 return student;
             }
         }
