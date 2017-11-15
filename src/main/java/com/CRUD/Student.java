@@ -45,4 +45,17 @@ public class Student {
     public void setID(Integer ID) {
         this.ID = ID;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        builder.append(this.ID);
+        builder.append(". ");
+        builder.append(this.firstName);
+        builder.append(" ");
+        builder.append(this.lastName);
+
+        return builder.toString();
+    }
 }
